@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <div id = "container">
+            <div id = "display">
+                <div id = "memory" class = "output"></div>
+                <div id = "maindisplay" class = "output"></div>
+            </div>
+            <dic id = "calculator">
+                <div id = "numberButtons">
+                    <button id = "del" class = "clearbutton" onclick="removeLastFromDisplay()">Del</button>
+                    <button id = "clear" class = "clearbutton" onclick="clearCalculator()">C</button>
+                    <button id = "*" class = "functionbutton">*</button>
+                    <button id = "/" class = "functionbutton">/</button>
+                    <button id = "7" class = "numberbutton">7</button>
+                    <button id = "8" class = "numberbutton">8</button>
+                    <button id = "9" class = "numberbutton">9</button>
+                    <button id = "-" class = "functionbutton">-</button>
+                    <button id = "4" class = "numberbutton">4</button>
+                    <button id = "5" class = "numberbutton">5</button>
+                    <button id = "6" class = "numberbutton">6</button>
+                    <button id = "+" class = "functionbutton">+</button>
+                    <button id = "1" class = "numberbutton">1</button>
+                    <button id = "2" class = "numberbutton">2</button>
+                    <button id = "3" class = "numberbutton">3</button>
+                    <button id = "N" class = "extrabutton" style="grid-area: a;" onclick="setNegative()">+/-</button>
+                    <button id = "0" class = "numberbutton"style="grid-area: b;" >0</button>
+                    <button id = "." class = "extrabutton" style="grid-area: c;" onclick="writeComma()">.</button>
+                    <button id = "=" class = "equalbutton" style="grid-area: d;" onclick="equal()">=</button>
+                </div>
+            </dic>
+        </div>
+    </body>
+    <script src="calculator.js"></script>
+</html>

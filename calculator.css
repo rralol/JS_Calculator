@@ -1,0 +1,79 @@
+body {
+    max-width: 310px;
+    margin: auto;
+    margin-top: 200px;
+    font-family: sans-serif;
+}
+
+#calculator {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    gap: 5px;
+    grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+}
+button {
+    background-color: white;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.numberbutton {
+    background-color: wheat;
+    border-color: wheat;
+}
+.extrabutton {
+    background-color: rgba(128, 128, 128, 0.500);
+    border-color: rgba(128, 128, 128, 0.500);
+}
+.functionbutton {
+    background-color: rgba(255, 166, 0, 0.7);
+    border-color: rgba(255, 166, 0, 0.7);
+}
+.equalbutton {
+    background-color: white;
+    border-color: white;
+}
+.clearbutton {
+    background-color: rgba(255, 99, 71, 0.7);
+    border-color: rgba(255, 99, 71, 0.7);
+}
+
+#container {
+    display: grid;
+    align-items: center;
+    border: gray 5px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 5px;
+}
+#display {
+    background-color: rgba(240, 255, 240, 0.5);
+    border-color: black;
+    border-radius: 5px;
+}
+
+.output {
+    text-align: right;
+    font-size: 25px;
+    width: 280px;
+    height: 20px;
+    padding: 10px;
+    color: black;
+}
+#memory {
+    font-size: 15px;
+    height: 15px;
+    opacity: 0.5;
+}
+#numberButtons {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    grid-template-areas: 
+    "t u v x"
+    "o p q r"
+    "j k l m"
+    "e f g d"
+    "a b c d";
+}
